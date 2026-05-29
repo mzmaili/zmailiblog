@@ -1,0 +1,55 @@
+{% assign locale = include.locale | default: site.locale %}
+{% assign author = page.author | default: page.authors[0] | default: site.author %}
+{% assign author = site.data.authors[author] | default: author %}
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  {% if author.avatar %}
+    <div class="author__avatar">
+      <a href="{{ author.home | default: '/' | absolute_url }}">
+        <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  {% endif %}
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="{{ author.home | default: '/' | absolute_url }}" itemprop="url">{{ author.name }}</a>
+    </h3>
+    {% if author.bio %}
+      <div class="author__bio p-note" itemprop="description">
+        {{ author.bio | markdownify }}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">{{ site.data.ui-text[locale].follow_label | remove: ":" | default: "Follow" }}</button>
+    <ul class="author__urls social-icons">
+      {% if author.location %}
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.location }}</span>
+        </li>
+      {% endif %}
+
+      {% if author.links %}
+        {% for link in author.links %}
+          {% if link.label and link.url %}
+            <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer me"{% if link.url contains 'http' %} itemprop="sameAs"{% endif %}><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span></a></li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </ul>
+
+    <!-- THINGS I BUILT & CONTRIBUTED TO -->
+    <hr style="margin: 1.5em 0 1em 0; border: 0; border-top: 1px solid #eee;">
+    <h3 class="author__name" style="margin-top: 0; font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.05em; font-weight: bold;">Things I Built & Contributed To</h3>
+    <ul class="author__urls" style="font-size: 0.9em;">
+      <li><a href="https://github.com/microsoft/GSATool" rel="nofollow noopener noreferrer">GSATool</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/samples/azure-samples/dsregtool/dsregtool/" rel="nofollow noopener noreferrer">DSRegTool</a></li>
+      <li><a href="https://microsoft.github.io/zerotrustassessment/" rel="nofollow noopener noreferrer">Zero Trust Workshop</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/security/zero-trust/assessment/overview" rel="nofollow noopener noreferrer">Zero Trust Assessment</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/samples/azure-samples/testdeviceregconnectivity/testdeviceregconnectivity/" rel="nofollow noopener noreferrer">Test Device Registration Connectivity</a></li>
+    </ul>
+  </div>
+</div>
