@@ -1,4 +1,5 @@
 ---
+
 title: "Do you have dual state devices in your AAD tenant?"
 date: 2020-07-26 00:00:00 +0800
 categories:
@@ -8,6 +9,7 @@ tags:
   - Entra ID Devices
   - Device Management
   - Identity and Security
+description: "Why a single device can appear twice in Azure AD - as both Azure AD registered and Hybrid Azure AD joined - and how to identify and fix dual-state devices."
 ---
 We have observed recently many customers are asking why they do see the same device has two device objects on Azure AD, and connected twice to Azure AD as Azure AD Registered and Hybrid Azure AD Joined device.<br><br>
 In this article, I am going to describe what does dual state mean and how to get rid of this state in the recommended way in the following points:

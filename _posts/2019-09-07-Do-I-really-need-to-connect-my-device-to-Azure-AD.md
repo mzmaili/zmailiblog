@@ -1,4 +1,5 @@
 ---
+
 title: "Do I really need to connect my device to Azure AD?!"
 date: 2020-04-05 00:00:00 +0800
 categories:
@@ -9,6 +10,7 @@ tags:
   - Entra ID Devices
   - Device Management
   - Identity and Security
+description: "Wondering whether to connect your devices to Azure AD? Here are the real benefits of joining or registering devices with Azure AD."
 ---
 Lots of customers are asking if it is important to connect their devices to Azure AD, and what are the benefits of doing this.
 

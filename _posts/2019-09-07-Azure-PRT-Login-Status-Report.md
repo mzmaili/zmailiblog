@@ -1,4 +1,5 @@
 ---
+
 title: "Azure PRT Login Status Report"
 date: 2019-09-07 00:00:00 +0800
 categories:
@@ -9,6 +10,7 @@ tags:
   - Entra ID Devices
   - Device Management
   - Identity and Security
+description: "How to check Azure AD Primary Refresh Token (PRT) login status to troubleshoot single sign-on and Conditional Access on Hybrid Azure AD and Azure AD joined devices."
 ---
 When the user login successfully to Hybrid Azure AD device or Azure AD joined device, he acquires AzureAD PRT which is extremely important to enable Single Sign-on (SSO) and to pass Azure AD Conditional Access Policies that deals with “**Hybrid Azure AD**” and/or “**Complaint**” devices.
 

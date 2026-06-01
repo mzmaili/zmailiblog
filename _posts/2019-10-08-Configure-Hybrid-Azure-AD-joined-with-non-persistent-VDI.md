@@ -1,4 +1,5 @@
 ---
+
 title: "Configure Hybrid Azure AD joined with non-persistent VDI"
 date: 2019-10-08- 00:00:00 +0800
 categories:
@@ -9,6 +10,7 @@ tags:
   - Entra ID Devices
   - Device Management
   - Identity and Security
+description: "Step-by-step guidance for configuring Hybrid Azure AD join on non-persistent VDI, and how to solve the device lifecycle and cleanup challenges it creates."
 ---
 When configuring Hybrid Azure AD joined devices with non-persistent Virtual Desktop Infrastructure (VDI) we face the following challenges:
 - Non-persistent VDI machine created when a user signs in, and it destroyed once the user signs out.

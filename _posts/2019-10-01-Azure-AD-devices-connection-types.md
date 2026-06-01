@@ -1,4 +1,5 @@
 ---
+
 title: "Azure AD devices connection types"
 date: 2019-10-01 00:00:00 +0800
 categories:
@@ -9,6 +10,7 @@ tags:
   - Entra ID Devices
   - Device Management
   - Identity and Security
+description: "A breakdown of the ways to connect devices to Azure AD - Azure AD registered, Azure AD joined, and Hybrid Azure AD joined - and when to use each."
 ---
 In a previous article I described why [Do I really need to connect my device to Azure AD](/device%20registration/Do-I-really-need-to-connect-my-device-to-Azure-AD/).
 In this article I will describe the available types of having devices connected to Azure AD to gain the benefits of utilizing Office 365 services, and when to use each one of them.

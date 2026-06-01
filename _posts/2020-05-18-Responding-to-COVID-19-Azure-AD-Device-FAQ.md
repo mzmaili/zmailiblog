@@ -1,4 +1,5 @@
 ---
+
 title: "Responding to COVID-19: Azure AD Device FAQ"
 date: 2020-05-18 00:00:00 +0800
 categories:
@@ -9,6 +10,7 @@ tags:
   - Entra ID Devices
   - Device Management
   - Identity and Security
+description: "Answers to the most common Azure AD device questions that came up as organizations shifted to remote work during COVID-19."
 ---
 Responding to COVID-19 (aka. coronavirus) crisis, employees started working from home, and we start receiving many queries about Azure AD Devices. In this article, I am going to answer the most frequently asked questions.
 <br><br>

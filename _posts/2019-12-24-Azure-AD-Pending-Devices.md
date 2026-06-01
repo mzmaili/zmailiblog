@@ -1,4 +1,5 @@
 ---
+
 title: "Azure AD Pending Devices"
 date: 2019-12-24 00:00:00 +0800
 categories:
@@ -9,6 +10,7 @@ tags:
   - Entra ID Devices
   - Device Management
   - Identity and Security
+description: "What the 'Pending' state means for devices in your Azure AD tenant, why it happens, and how to clean up and resolve pending device objects."
 ---
 Do you have pending devices in your Azure AD tenant? If so, then this article is definitely for you 🙂
 

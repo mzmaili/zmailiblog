@@ -1,4 +1,5 @@
 ---
+
 title: "Hybrid Azure AD Device Registration"
 date: 2019-10-20 00:00:00 +0800
 categories:
@@ -9,6 +10,7 @@ tags:
   - Entra ID Devices
   - Device Management
   - Identity and Security
+description: "A walkthrough of how Hybrid Azure AD joined device registration works, step by step, so you can validate and troubleshoot the process."
 ---
 In this article, I am discussing device registration for hybrid Azure AD joined devices.
 First of all, let’s go through device registration steps:

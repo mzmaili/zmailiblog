@@ -3,3 +3,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="/assets/images/zmaili-icon.png">
 <link rel="apple-touch-icon" href="/assets/images/zmaili-icon.png">
+
+{% if page.layout == 'single' and page.date %}
+  {%- assign ld_image = page.header.og_image | default: page.header.teaser | default: site.og_image | absolute_url -%}
+  {%- assign ld_desc = page.description | default: page.excerpt | markdownify | strip_html | normalize_whitespace | strip | truncate: 300 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": {{ page.url | absolute_url | jsonify }} },
+  "headline": {{ page.title | jsonify }},
+  "description": {{ ld_desc | jsonify }},
+  "image": {{ ld_image | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "url": {{ site.url | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ "/assets/images/zmaili-icon.png" | absolute_url | jsonify }}
+    }
+  }
+}
+</script>
+{% endif %}

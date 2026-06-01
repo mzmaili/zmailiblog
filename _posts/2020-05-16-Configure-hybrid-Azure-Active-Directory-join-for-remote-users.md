@@ -1,4 +1,5 @@
 ---
+
 title: "Configure hybrid Azure Active Directory join for remote users"
 date: 2020-05-16 00:00:00 +0800
 categories:
@@ -9,6 +10,7 @@ tags:
   - Entra ID Devices
   - Device Management
   - Identity and Security
+description: "How to configure Hybrid Azure AD join for remote and work-from-home users so their devices register correctly over the internet."
 ---
 The number of users working from home (WFH) increases in the response of COVID-19 (aka. coronavirus) outbreak, and we need to make sure that identities and their information remain protected and secured by connecting devices to Azure AD and configuring Device-based Conditional Access Policy.<br>
 

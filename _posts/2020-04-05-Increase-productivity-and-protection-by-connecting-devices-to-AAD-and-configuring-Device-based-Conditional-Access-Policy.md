@@ -1,4 +1,5 @@
 ---
+
 title: "Increase productivity and protection by connecting devices to AAD and configuring Device-based Conditional Access Policy"
 date: 2020-04-05 00:00:00 +0800
 categories:
@@ -9,6 +10,7 @@ tags:
   - Entra ID Devices
   - Device Management
   - Identity and Security
+description: "Boost productivity and protection for remote and work-from-home users by connecting devices to Azure AD and enforcing device-based Conditional Access policies."
 ---
 The number of users working from home (WFH) increases in response of COVID-19 (aka. coronavirus) outbreak, and we need to make sure that identities and their information remain protected and secured by connecting devices to Azure AD and configuring Device-based Conditional Access Policy.
 

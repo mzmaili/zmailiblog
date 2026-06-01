@@ -1,4 +1,5 @@
 ---
+
 title: "Understanding Device Registration Join Types: When and Why to Use Each"
 date: 2024-10-24 00:00:00 +0800
 categories:
@@ -9,6 +10,7 @@ tags:
   - Entra ID Devices
   - Device Management
   - Identity and Security
+description: "Understand the Azure AD device registration join types - registered, joined, and Hybrid joined - with clear guidance on when and why to use each."
 ---
 ![Screenshot showing Device Registration Join Types](/assets/images/deviceJoinTypes.jpg "Device Registration Join Types") 
 <br><br>
