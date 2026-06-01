@@ -1,3 +1,3 @@
-# zmaili.net
+# blog.zmaili.net
 
-Repo for the site [zmaili.net](https://zmaili.net)
+Repo for the site [blog.zmaili.net](https://blog.zmaili.net)
